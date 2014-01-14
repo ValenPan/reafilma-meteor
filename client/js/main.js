@@ -8,13 +8,14 @@ $('#video_destacado_player').attr('src',video);
 });*/
 
 Meteor.subscribe('reels');
+Meteor.render(function(){
 
-var iframe = $('#video_destacado_player').id;
+var iframe = $('#video_destacado_player')[0];
 alert(iframe);
 var player = $f(iframe),
     status = $('.status');
 
-Meteor.render(function(){
+
 
 var video="//player.vimeo.com/video/74622325?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0";
 $('#video_destacado_player').attr('src',video);
