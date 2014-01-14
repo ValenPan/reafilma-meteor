@@ -1,0 +1,44 @@
+
+	<!-- aqui el codigo de video destacado-->
+	
+
+
+<template name="reelList">
+
+
+	
+	<div class="container">
+	<section id="principal">
+	<div class="row">
+		<div class="twelve columns offset-by-two content">
+		<div id="reafilma">
+			
+
+			<div class="destacado">
+			 <div id="player" class="ch-item-destacado ch-img-1">
+        	<h2>Presentación de nuestros Reels</h2>
+           </div>
+
+
+       
+			
+			<img id="video_destacado"   width="100%"  src="img/destacado.png" >
+			
+			<iframe id="video_destacado_player" src="//player.vimeo.com/video/74622324?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" class="img-responsive" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+			</iframe>
+			
+		</div>
+		</div>
+	</div>	
+		
+		<div class="row">
+			
+			<div class="reels">
+				{{#each reels}}
+					{{>reel}}
+				{{/each}}
+			<div>
+			
+		</div>
+		</section>
+</template>
